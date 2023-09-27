@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21BPS1034-SEJAL PRADHAN Task20</title>
+</head>
+<body>
+    Enter a word : <input type="text" id="word" /><br><br>
+    <input type="button" id="blue" onClick="alphabet_order()" Value="Show the word arranged in alphabetical form" />
+    <p>The Result is : <br>
+        <span id="result"></span>
+    </p>
+</body>
+<script>
+    function alphabet_order() {
+        str = document.getElementById("word").value;
+        document.getElementById("result").innerHTML = str.split('').sort().join('');
+    }
+    // console.log("Word arranged in alphabetical order: "+alphabet_order("webmaster"));
+</script>
+</html>

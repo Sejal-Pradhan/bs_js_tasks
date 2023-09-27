@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21BPS1034-SEJAL PRADHAN Task19</title>
+</head>
+<body>
+	Enter a number : <input type="text" id="num" /><br><br>
+	<input type="button" id="blue" onClick="reverse_a_number()" Value="Show the number in reverse form" />
+	<p>The Result is : <br>
+		<span id="result"></span>
+	</p>
+</body>
+<script>
+	function reverse_a_number() {
+		n = document.getElementById("num").value;
+		n = n + "";
+		document.getElementById("result").innerHTML = n.split("").reverse().join("");
+	}
+	// console.log("Reversed number: "+Number(reverse_a_number(32243)));
+</script>
+</html>
